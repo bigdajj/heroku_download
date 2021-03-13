@@ -25,6 +25,10 @@
 			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
 			"required": false,
 			"value": "Google:tmp"
+		"RCLONE_DESTINATION2": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
+			"required": false,
+			"value": "Google:tmp"
 		},
         "SHTLINK":{
             "description": "色华堂域名，如果默认值可以访问可以不用更改, default: https://www.sehuatang.org/",
