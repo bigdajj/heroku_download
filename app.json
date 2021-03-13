@@ -25,6 +25,7 @@
 			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
 			"required": false,
 			"value": "Google:tmp"
+		},
 		"RCLONE_DESTINATION2": {
 			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
 			"required": false,
