@@ -58,7 +58,6 @@ async function main(){
         url VARCHAR(1000) REFERENCES posts(url)
     );`);
 
-    await Promise.map(postsWithoutMagnet,parseMagnet,{concurrency:32});
     console.log('Database Initialization finsihed');
     await client.end();
 }
