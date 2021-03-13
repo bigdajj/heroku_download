@@ -85,9 +85,4 @@ async function cleanOldPost(latestDate){
 }
 
 
-main().catch((err)=>{
-    console.log(err);
-    client.end().then(()=>{
-        process.exit(1);
-    })
-});
+main();
