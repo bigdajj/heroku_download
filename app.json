@@ -1,7 +1,12 @@
 {
 	"name": "heroku_download",
+	"addons": [
+		{
+		  "plan": "heroku-postgresql:hobby-dev"
+		}
+	],
 	"description": "Run aria and fetch sht",
-	"repository": "https://github.com/Kwok1am/heroku_download",
+	"repository": "https://github.com/xhghs/aria2_heroku_sht_public",
 	"keywords": ["AriaNG"],
 	"env": {
 		"HEROKU_APP_NAME": {
@@ -21,10 +26,15 @@
 			"required": false,
 			"value": "Google:tmp"
 		},
-		"RCLONE_DESTINATION_2": {
-			"description": "If you mount a second cloud drive, then fill in \"[drivename B]:[remove path B]\"",
-			"required": false,
-			"value": "OneDrive:tmp"	
+        "SHTLINK":{
+            "description": "色华堂域名，如果默认值可以访问可以不用更改, default: https://www.sehuatang.org/",
+            "required": false,
+            "value": "https://www.sehuatang.org/"
+		},
+		"CFLINK":{
+			"description": "CF Fetch Bot link. Experimental, Optional, eg: https://abc.workers.dev/ ",
+            "required": false,
+            "value": ""			
 		}
 	},
 	"buildpacks": [
