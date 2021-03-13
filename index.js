@@ -83,6 +83,3 @@ async function cleanOldPost(latestDate){
         await client.query(delete_query,[title]);
     }
 }
-
-
-main();
