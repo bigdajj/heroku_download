@@ -155,7 +155,7 @@ async function restore_undownloaded(){
 }
 
 async function updateDB(){
-    let respone = await gotInstance.get('forum.php?mod=forumdisplay&fid=1030&page=1');
+    let respone = await gotInstance.get('forum.php?mod=forumdisplay&fid=125&page=1');
     const html = respone.body;
     const $ = cheerio.load(html);
     // console.log($("tbody[id^='normalthread']").length);
