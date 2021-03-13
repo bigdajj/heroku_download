@@ -58,7 +58,7 @@ async function main(){
         url VARCHAR(1000) REFERENCES posts(url)
     );`);
 
-    let respone = await gotInstance.get('forum.php?mod=forumdisplay&fid=152&page=1');
+    let respone = await gotInstance.get('forum.php?mod=forumdisplay&fid=103&page=1');
     const html = respone.body;
     const $ = cheerio.load(html);
     // console.log($("tbody[id^='normalthread']").length);
